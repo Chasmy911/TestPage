@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+  font-style: normal;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none; 
+}
+
+.wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(16, 16, 29, 0.90);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.header__navigation {
+  width: 50%;
+
+}
+
+.header__navigation-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.header__navigation-item a {
+ color:#FFF
+}
+.header__navigation-item a:hover {
+  transform: scale(1.2);
+  color: #43ABF0;
+}
+
+.header__navigation-item:hover {
+  transform: scale(1.2); 
+}
+
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header__logo img {
+  display: block;
+  max-width: 250px;
+}
+
+.header__navigation-item {
+  color: #FFF;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.business {
+  background: url(image/main.jpg) ;
+  background-position: center;
+  background-size: cover;
+}
+
+.business__title {
+  max-width: 80%;
+  padding: 203px 0 80px;
+  color: #3E9CDC;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.business__title-black {
+  color: #000;
+}
+
+.business__subtitle {
+  color: #000;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.business__list-item {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.business__list-item {
+  list-style-type: "- ";
+}
+
+.business__btn-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 30%;
+  padding: 95px 0;
+}
+
+.business__btn,
+.order__form-btn {
+  display: flex;
+  width: 130px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #6F6D7B;
+  background: #FFF;
+  color: #2A2B30;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.business__btn:hover,
+.order__form-btn:hover {
+  background: #3E9CDC;
+  cursor: pointer;
+  color: #FFF;
+  border: 1px solid #FFF;
+
+}
+
+.order {
+  background: url(image/order.png), rgb(16, 16, 29) 50% / cover no-repeat;
+  padding-bottom: 50px;
+}
+
+.order__title {
+  color: #3E9CDC;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 170px 0 30px;
+}
+
+.order__title-white {
+  color: #FFF;
+}
+
+.order__subtitle {
+  color: #BBB;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 103px;
+}
+
+.order__subsequence {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999999;
+}
+
+.dots {
+  position: relative;
+}
+
+.dots:before {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  right: -90%;
+  content: url(image/dots.svg);
+}
+
+.order__subsequence__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__subsequence__item-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3E9CDC;
+  border: 3px solid #286690;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order__subsequence__item-img img {
+  display: block;
+}
+
+.order__subsequence__item-text {
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 0 30px 0;
+  max-width: 185px;
+}
+
+.order__form__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.order__form-list,
+.order__form-input {
+  color: black;
+  width: 30%;
+  height: 50px;
+  padding-left: 15px;
+}
+
+.order__form-input-add {
+  padding: 15px;
+  color: #FFF;
+}
+
+.order__form-btn {
+  display: block;
+  margin: 15px auto;
+}
+
+
+
+.input__wrapper {
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.input__file-icon-wrapper {
+  height: 60px;
+  width: 60px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+}
+
+.input__file-button-text {
+  line-height: 1;
+  margin-top: 1px;
+}
+
+.input__file-button {
+  width: 100%;
+  max-width: 290px;
+  height: 60px;
+  background: #fff;
+  ;
+  color: black;
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.footer {
+  background: #3D4050;
+  color: #FFF;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.footer__rights {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer__rights+.footer__payments,
+.footer__payments +.footer__social {
+  padding-left: 25px;
+  border-left: 1px solid #fff;
+}
+
+.footer__payments__list-item {
+ 
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__payments__list  {
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social {
+  display: flex;
+  gap: 40px;
+}
+
+
+select {
+  background-color: rgba(39, 39, 51, 0.9);
+  
+}
+
+ .select__wrapper {
+  color: white;
+ }
+
+select>option  {
+  color: white;
+  padding: 10px;
+}
+
+select>select:active,
+.select>select:focus {
+  color: white;
+  padding-top: 10px;
+  background: forestgreen;
+
+}
