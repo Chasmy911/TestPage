@@ -31,6 +31,10 @@
             </li>
           </ul>
         </nav>
+        <div class="burger-menu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
       </div>
     </div>
   </header>
@@ -60,9 +64,9 @@
         <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
         <div class="order__subsequence">
           <div class="order__subsequence__item dots">
-            <div class="order__subsequence__item-img">
-              <div class="order__subsequence__item-img"><img src="image/Order_pic1.svg" alt="order_pic"></div>
-            </div>
+
+            <div class="order__subsequence__item-img"><img src="image/Order_pic1.svg" alt="order_pic"></div>
+
             <p class="order__subsequence__item-text">Lorem ipsum dolor
               sit amet</p>
           </div>
@@ -90,20 +94,26 @@
         </div>
         <form class="order__form">
           <div class="order__form__wrapper">
-             
-              <select class="order__form-list">
-                <option class="order__form-item">Выберите тип системы</option>
-                <option class="order__form-item">Sed ut perspiciatis</option>
-                <option class="order__form-item">Nemo enim ipsam </option>
-                <option class="order__form-item">Et harum quidem</option>
-                <option class="order__form-item">Temporibus autem</option>
-                <option class="order__form-item">Itaque earum rerum</option>
-              </select>
-             
+
+            <select class="order__form-list">
+              <option class="order__form-item">Выберите тип системы</option>
+              <option class="order__form-item">Sed ut perspiciatis</option>
+              <option class="order__form-item">Nemo enim ipsam </option>
+              <option class="order__form-item">Et harum quidem</option>
+              <option class="order__form-item">Temporibus autem</option>
+              <option class="order__form-item">Itaque earum rerum</option>
+            </select>
+
             <input type="email" class="order__form-input" placeholder="Ваш e-mail">
             <input type="text" class="order__form-input" placeholder="Ваше имя">
+          </div>
+          <div class="order__form__wrapper">
             <div class="order__form__polosa">
-              <p class="order__form__polosa-text"> Sed ut perspiciatis, unde omnis iste natus</p>
+              <p class="order__form__polosa-text"> Sed ut perspiciatis, unde omnis iste natus <spap id="demo"></spap>
+              </p>
+              <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="order__form__polosa-slider" id="myRange">
+              </div>
             </div>
             <div class="input__wrapper">
               <input name="file" type="file" id="input__file" class="input input__file" multiple>
